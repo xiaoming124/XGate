@@ -89,3 +89,47 @@ if (SHOW_SPECTRUM > 0)
     figure(2);
     pspectrum(x_1,fs,'spectrogram','OverlapPercent',99,'Leakage',0.85,'MinThreshold',-85,'TimeResolution',0.025);
 end
+
+
+% BW_min = 125e3;
+% SF_min = 7;
+% Threshold = 1080;
+% MaxPeakNum = 70;
+% SymbolNum = 200;
+% 
+% 
+% BW_min = 125e3;
+% SF_min = 8;
+% Threshold = 2000;
+% MaxPeakNum = 135;
+% SymbolNum = 200;
+% 
+% 
+% BW_min = 125e3;
+% SF_min = 9;
+% Threshold = 3000;
+% MaxPeakNum = 270;
+% SymbolNum = 200;
+% 
+% 
+% BW_min = 125e3;
+% SF_min = 10;
+% Threshold = 5000;
+% MaxPeakNum = 540;
+% SymbolNum = 200;
+% 
+% 
+% BW_min = 125e3;
+% SF_min = 11;
+% Threshold = 9000;
+% MaxPeakNum = 1000;
+% SymbolNum = 200;
+% 
+% 
+% BW_min = 125e3;
+% SF_min = 12;
+% Threshold = 18000;
+% MaxPeakNum = 2000;
+% SymbolNum = 200;
+
+
