@@ -29,3 +29,17 @@ main_concurrentPacket.m - detect and receive three concurrent packets with diffe
 
 main_concurrentPacket_168CHs - concurrently utilize 168 logical channels in 1.6MHz spectrum.
 
+## Citation
+
+```
+@inproceedings{yu2024xgate,
+  title={Revolutionizing LoRa Gateway with XGate: Scalable Concurrent Transmission across Massive Logical Channels},
+  author={Yu, Shiming and Xia, Xianjin and Hou, Ningning and Zheng, Yuanqing and Gu, Tao},
+  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking},
+  year = {2024},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  location = {Washington, D.C., USA},
+  series = {ACM MobiCom '24}
+}
+```
