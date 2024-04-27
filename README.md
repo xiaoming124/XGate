@@ -42,7 +42,7 @@ main_concurrentPacket_168CHs - concurrently utilize 168 logical channels in 1.6M
 Collect data traces: 
 
 1. Set up USRP at 2M sps (by default) with appropriate central frequency under your experiment settings (e.g., central frequency = 915MHz that covers the spectrum 914-916MHz).
-2. Set up LoRa radios with any transmission parameters but ensure they can be covered by the Rx spectrum of USRP (e.g., central frequency = 914.6, bandwidth = 250kHz).
+2. Set up LoRa radios with any transmission parameters but ensure they can be covered by the Rx spectrum of USRP (e.g., central frequency = 914.6MHz, bandwidth = 250kHz).
 3. Forward the received data traces to the workstation.
 
 Pre-process and synthesize the data traces:
