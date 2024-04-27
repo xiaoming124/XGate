@@ -15,7 +15,7 @@ ED_LORA = 8.9e5;                % end pos of LoRa signal samples
 
 % figure display configuration
 SHOW_SIGNALS = 0;   % show the raw signals or not
-SHOW_SPECTRUM = 0;  % show the spectrum of raw signals or not
+SHOW_SPECTRUM = 1;  % show the spectrum of raw signals or not
 
 %
 % data loading section
@@ -87,7 +87,7 @@ end
 if (SHOW_SPECTRUM > 0)
     % Time Resolution can be modified
     figure(2);
-    pspectrum(x_1,fs,'spectrogram','OverlapPercent',99,'Leakage',0.85,'MinThreshold',-85,'TimeResolution',0.025);
+    pspectrum(x_1,fs,'spectrogram','OverlapPercent',99,'Leakage',0.85,'MinThreshold',-25,'TimeResolution',0.005);
 end
 
 
