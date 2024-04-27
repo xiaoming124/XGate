@@ -14,7 +14,7 @@ num_data_sym = 200; % for (125kHz, SF8) packet
 % SPECTRO_LEN = 2048*5+num_symb;      % max length of LoRa spectrom
 
 % figure display configuration
-SHOW_SIGNALS = 0;   % show the raw signals or not
+SHOW_SIGNALS = 1;   % show the raw signals or not
 SHOW_SPECTRUM = 1;  % show the spectrum of raw signals or not
 
 %
