@@ -25,7 +25,7 @@ Data trace collection: USRP N210 (or other Software Defined Radios with equivale
 
 Data trace processing: A workstation with Matlab (version:R2022b)
 
-## Key Functions:
+## To run the artifact:
 
 We provide three data traces that reproduce the key functions of XGate.
 
