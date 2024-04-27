@@ -25,7 +25,7 @@ Data trace collection: USRP N210 (or other Software Defined Radios with equivale
 
 Data trace processing: A workstation with Matlab (version:R2022b)
 
-## Key Functions:
+## To run the artifact:
 
 We provide three data traces that reproduce the key functions of XGate.
 
@@ -35,7 +35,7 @@ main_singlePacket.m - detect and receive a single packet without channel informa
 
 main_concurrentPacket.m - detect and receive three concurrent packets with different parameters but the same slope (refer to Figure 3 and Figure 5).
 
-main_concurrentPacket_168CHs - concurrently utilize 168 logical channels in 1.6MHz spectrum (refer to "XGate (Setting #2)" Figure 11(a)).
+main_concurrentPacket_168CHs - concurrently utilize 168 logical channels in 1.6MHz spectrum (refer to the peak dot of "XGate (Setting #2)" Figure 11(a)).
 
 ## To run and evaluate XGate on your own testbed
 
