@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="encode_8h" kind="file" language="C++">
+    <compoundname>encode.h</compoundname>
+    <includes refid="api_8h" local="no">lora/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includes refid="lora_8h" local="no">lora/lora.h</includes>
+    <includedby refid="encode__impl_8h" local="no">encode_impl.h</includedby>
+    <incdepgraph>
+      <node id="51">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="52">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="50">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>lora/lora.h</label>
+        <link refid="lora_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>encode.h</label>
+        <link refid="encode_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="55">
+        <label>encode_impl.h</label>
+        <link refid="encode__impl_8h"/>
+      </node>
+      <node id="54">
+        <label>encode.h</label>
+        <link refid="encode_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1encode" prot="public">gr::lora::encode</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ningning/gr-lora-master-nt/include/lora/encode.h"/>
+  </compounddef>
+</doxygen>

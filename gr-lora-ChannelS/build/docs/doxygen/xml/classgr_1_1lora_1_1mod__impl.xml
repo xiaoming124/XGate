@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1mod__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::mod_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1mod" prot="public" virt="non-virtual">gr::lora::mod</basecompoundref>
+    <includes refid="mod__impl_8h" local="no">mod_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a4038f0854b2d872417f06c162a2e2b74" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::mod_impl::d_in_port</definition>
+        <argsstring></argsstring>
+        <name>d_in_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="40" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a6542884122089dbc6aa60b31d679afb8" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::mod_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="42" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a437f76da4030d69a971036d7854ffde3" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::mod_impl::d_sync_word</definition>
+        <argsstring></argsstring>
+        <name>d_sync_word</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="43" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1aabdbda7dc0965a7105faef23d2c68949" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::mod_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="45" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a08febdb6e93a2e95eee919d9bd6bb68b" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::mod_impl::d_interleaver_size</definition>
+        <argsstring></argsstring>
+        <name>d_interleaver_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="46" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a16357ca49e5f7535111604203e03e1ec" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::mod_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="48" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1aa531284adc2e6d56f8659f8fd9ceb4eb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::mod_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="49" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a5abe2124e2517b7b8c5a873d3950f5d9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::mod_impl::d_iq_out</definition>
+        <argsstring></argsstring>
+        <name>d_iq_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="51" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1mod__impl_1a35f2e2373f980dec52140384ae1287a1" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::mod_impl::f_mod</definition>
+        <argsstring></argsstring>
+        <name>f_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="53" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1mod__impl_1a0be495b5fa6129b0f172860754e663bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::mod_impl::mod_impl</definition>
+        <argsstring>(short spreading_factor, unsigned char d_sync_word)</argsstring>
+        <name>mod_impl</name>
+        <param>
+          <type>short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>d_sync_word</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1mod__impl_1a5811195b790d9c0c2cc86fa9c0d96683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::mod_impl::~mod_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~mod_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1mod__impl_1ad975bc80b39de45f6b1e1969ccad98bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::mod_impl::modulate</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>modulate</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1mod__impl_1a49bb5fc0b8a86c981cc499ccfb6a8446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::mod_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>block</label>
+      </node>
+      <node id="38">
+        <label>gr::lora::mod_impl</label>
+        <link refid="classgr_1_1lora_1_1mod__impl"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gr::lora::mod</label>
+        <link refid="classgr_1_1lora_1_1mod"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>block</label>
+      </node>
+      <node id="41">
+        <label>gr::lora::mod_impl</label>
+        <link refid="classgr_1_1lora_1_1mod__impl"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>gr::lora::mod</label>
+        <link refid="classgr_1_1lora_1_1mod"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" line="38" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/mod_impl.h" bodystart="37" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1mod__impl_1aa531284adc2e6d56f8659f8fd9ceb4eb" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1aabdbda7dc0965a7105faef23d2c68949" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a4038f0854b2d872417f06c162a2e2b74" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_in_port</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a08febdb6e93a2e95eee919d9bd6bb68b" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_interleaver_size</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a5abe2124e2517b7b8c5a873d3950f5d9" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_iq_out</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a6542884122089dbc6aa60b31d679afb8" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a437f76da4030d69a971036d7854ffde3" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_sync_word</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a16357ca49e5f7535111604203e03e1ec" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a35f2e2373f980dec52140384ae1287a1" prot="private" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>f_mod</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a49bb5fc0b8a86c981cc499ccfb6a8446" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a0be495b5fa6129b0f172860754e663bf" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>mod_impl</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1ad975bc80b39de45f6b1e1969ccad98bf" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>modulate</name></member>
+      <member refid="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1mod__impl_1a5811195b790d9c0c2cc86fa9c0d96683" prot="public" virt="non-virtual"><scope>gr::lora::mod_impl</scope><name>~mod_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

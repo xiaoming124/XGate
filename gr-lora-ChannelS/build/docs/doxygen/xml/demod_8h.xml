@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="demod_8h" kind="file" language="C++">
+    <compoundname>demod.h</compoundname>
+    <includes refid="api_8h" local="no">lora/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="demod__impl_8h" local="yes">demod_impl.h</includedby>
+    <incdepgraph>
+      <node id="28">
+        <label>demod.h</label>
+        <link refid="demod_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="31">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="29">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="32">
+        <label>demod.h</label>
+        <link refid="demod_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>demod_impl.h</label>
+        <link refid="demod__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1demod" prot="public">gr::lora::demod</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="demod_8h_1a26603a2300711064010b4930d21feecb" prot="public" static="no">
+        <name>DEMOD_HISTORY_DEPTH</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="28" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="demod_8h_1aec63cfd1559e0075e35fae2f1a81b1fc" prot="public" static="no">
+        <name>REQUIRED_PREAMBLE_CHIRPS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="29" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="demod_8h_1af4808b2f42dd1e6656798151f4f9a4c7" prot="public" static="no">
+        <name>REQUIRED_SFD_CHIRPS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="30" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="demod_8h_1a2f0f156e1cba585db801dc65f46fa8d1" prot="public" static="no">
+        <name>LORA_SFD_TOLERANCE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="31" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="demod_8h_1a1fd26d306ddc14fd13364a5122543ce0" prot="public" static="no">
+        <name>LORA_PREAMBLE_TOLERANCE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="32" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="demod_8h_1a4f76ca6c23ad07d5bf79fd08db4527b1" prot="public" static="no">
+        <name>DEMOD_SYNC_RECOVERY_COUNT</name>
+        <initializer>(8-<ref refid="demod_8h_1aec63cfd1559e0075e35fae2f1a81b1fc" kindref="member">REQUIRED_PREAMBLE_CHIRPS</ref>)+(2-<ref refid="demod_8h_1af4808b2f42dd1e6656798151f4f9a4c7" kindref="member">REQUIRED_SFD_CHIRPS</ref>)+4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h" line="33" column="9" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/demod.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ningning/gr-lora-master-nt/include/lora/demod.h"/>
+  </compounddef>
+</doxygen>

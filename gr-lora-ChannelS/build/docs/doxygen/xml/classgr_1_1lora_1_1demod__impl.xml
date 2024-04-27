@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1demod__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::demod_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1demod" prot="public" virt="non-virtual">gr::lora::demod</basecompoundref>
+    <includes refid="demod__impl_8h" local="no">demod_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1afdbddfb86c8f7a751fefa6593df7b047" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::demod_impl::d_out_port</definition>
+        <argsstring></argsstring>
+        <name>d_out_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="41" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a218f5b97c1dc405f207a7afa25545405" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" kindref="member">demod_state_t</ref></type>
+        <definition>demod_state_t gr::lora::demod_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="43" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a302be29927f4bfa1ebc274aeb9977a68" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="44" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1afaf26e92217208ae21a3bbe2a51d3b19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="45" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a79da350962d9b05c582c714bb6c91c4a" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_num_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="47" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a7f49638489fc43029b22d4790aad8c6b" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_fft_size_factor</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="48" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aee9af4cc59671de1b33b61de78619d94" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="49" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aaa8e93062cd0ef4bdc6ede0641396fed" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_overlaps</definition>
+        <argsstring></argsstring>
+        <name>d_overlaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="50" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ac0063894145b7afada5342fc66db3cb6" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="51" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ac043a446ff6a77676d2e49b0557fc2c7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::d_power</definition>
+        <argsstring></argsstring>
+        <name>d_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="53" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a3076933f8bdf0cd134f8690ac3bcc9f0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::d_threshold</definition>
+        <argsstring></argsstring>
+        <name>d_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="54" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a5138d6e95e0b4fa845b2004e8519830a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_squelched</definition>
+        <argsstring></argsstring>
+        <name>d_squelched</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="55" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a001d61db94807b002d91a88fea5dfe16" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_preamble_idx</definition>
+        <argsstring></argsstring>
+        <name>d_preamble_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="57" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa29e005da9858ce46e748e57bd33022a" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_sfd_idx</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="58" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a20b6e625d68bf33597dd1789e539d6ba" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::demod_impl::d_argmax_history</definition>
+        <argsstring></argsstring>
+        <name>d_argmax_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="59" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1af2571576f2130696e4795a1f6f090a6a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::demod_impl::d_sfd_history</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="60" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a08b8713064ac8dbdacfbb6a29187b77c" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_sync_recovery_counter</definition>
+        <argsstring></argsstring>
+        <name>d_sync_recovery_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="61" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aac829b5b65b54780a33df5a5a279996f" prot="private" static="no" mutable="no">
+        <type>fft::fft_complex *</type>
+        <definition>fft::fft_complex* gr::lora::demod_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="63" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a0d2f5e289909416fa200d7b9e0b71aa2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::demod_impl::d_window</definition>
+        <argsstring></argsstring>
+        <name>d_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="64" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a61b9a694abc2983ce081b7887b0a2742" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::d_beta</definition>
+        <argsstring></argsstring>
+        <name>d_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="65" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a7c852b63ece103e69a000351fd679186" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::demod_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="67" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a472417c4fc723a4a86bb918e41181f7c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::demod_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="68" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ac9cf73accc97b0a71385982bece32fc4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::demod_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="70" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aee70041d51506846f9bfa52c0d4cfbc8" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_raw</definition>
+        <argsstring></argsstring>
+        <name>f_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="72" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a1c4a686ed59a62e3764300075649c9e3" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_up_windowless</definition>
+        <argsstring></argsstring>
+        <name>f_up_windowless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="72" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa8f82e228a74fe368129be2d6fe15ac2" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_up</definition>
+        <argsstring></argsstring>
+        <name>f_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="72" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ad187269f82a28e3ff2c4253b705ad382" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_down</definition>
+        <argsstring></argsstring>
+        <name>f_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="72" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a82fd660bd9a8612becac6af04e7259ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::demod_impl::demod_impl</definition>
+        <argsstring>(unsigned short spreading_factor, bool low_data_rate, float beta, unsigned short fft_factor)</argsstring>
+        <name>demod_impl</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>fft_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1aa8ffc7b156ff9335094581031ed9d7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::demod_impl::~demod_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~demod_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a4e81887f311ab2f228c324e35294b409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::demod_impl::samples_to_file</definition>
+        <argsstring>(const std::string path, const gr_complex *v, const uint32_t length, const uint32_t elem_size)</argsstring>
+        <name>samples_to_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a8734a44f6b20ce098b9aa11423d54d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::argmax</definition>
+        <argsstring>(gr_complex *fft_result, bool update_squelch)</argsstring>
+        <name>argmax</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_squelch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a35f85d51371e792184057639319d7f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::demod_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1acf1fcfe947d24485506827060d38ca48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::demod_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>gr::lora::demod</label>
+        <link refid="classgr_1_1lora_1_1demod"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>block</label>
+      </node>
+      <node id="16">
+        <label>gr::lora::demod_impl</label>
+        <link refid="classgr_1_1lora_1_1demod__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>gr::lora::demod</label>
+        <link refid="classgr_1_1lora_1_1demod"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>block</label>
+      </node>
+      <node id="19">
+        <label>gr::lora::demod_impl</label>
+        <link refid="classgr_1_1lora_1_1demod__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" line="39" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/demod_impl.h" bodystart="38" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a8734a44f6b20ce098b9aa11423d54d8f" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>argmax</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a20b6e625d68bf33597dd1789e539d6ba" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_argmax_history</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a61b9a694abc2983ce081b7887b0a2742" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a472417c4fc723a4a86bb918e41181f7c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aac829b5b65b54780a33df5a5a279996f" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aee9af4cc59671de1b33b61de78619d94" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a7f49638489fc43029b22d4790aad8c6b" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft_size_factor</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1afaf26e92217208ae21a3bbe2a51d3b19" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a79da350962d9b05c582c714bb6c91c4a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_num_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ac0063894145b7afada5342fc66db3cb6" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1afdbddfb86c8f7a751fefa6593df7b047" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_out_port</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aaa8e93062cd0ef4bdc6ede0641396fed" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_overlaps</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ac043a446ff6a77676d2e49b0557fc2c7" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_power</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a001d61db94807b002d91a88fea5dfe16" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_preamble_idx</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a302be29927f4bfa1ebc274aeb9977a68" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1af2571576f2130696e4795a1f6f090a6a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sfd_history</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa29e005da9858ce46e748e57bd33022a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sfd_idx</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a5138d6e95e0b4fa845b2004e8519830a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_squelched</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a218f5b97c1dc405f207a7afa25545405" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ac9cf73accc97b0a71385982bece32fc4" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a08b8713064ac8dbdacfbb6a29187b77c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sync_recovery_counter</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a3076933f8bdf0cd134f8690ac3bcc9f0" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a7c852b63ece103e69a000351fd679186" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a0d2f5e289909416fa200d7b9e0b71aa2" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_window</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a82fd660bd9a8612becac6af04e7259ff" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>demod_impl</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ad187269f82a28e3ff2c4253b705ad382" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_down</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aee70041d51506846f9bfa52c0d4cfbc8" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_raw</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa8f82e228a74fe368129be2d6fe15ac2" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_up</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a1c4a686ed59a62e3764300075649c9e3" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_up_windowless</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a35f85d51371e792184057639319d7f65" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1acf1fcfe947d24485506827060d38ca48" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora_1_1demod_1a99d3d47a98790befc1dcddd8b267d9a2" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a4e81887f311ab2f228c324e35294b409" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>samples_to_file</name></member>
+      <member refid="classgr_1_1lora_1_1demod_1aaf5f7e94353c27096fb0c41057382bef" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa8ffc7b156ff9335094581031ed9d7c4" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>~demod_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

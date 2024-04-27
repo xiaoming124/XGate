@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="lora_8h" kind="file" language="C++">
+    <compoundname>lora.h</compoundname>
+    <includes refid="api_8h" local="no">lora/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="decode_8h" local="no">decode.h</includedby>
+    <includedby refid="encode_8h" local="no">encode.h</includedby>
+    <incdepgraph>
+      <node id="69">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="70">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="68">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>lora.h</label>
+        <link refid="lora_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="72">
+        <label>decode.h</label>
+        <link refid="decode_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>encode_impl.h</label>
+        <link refid="encode__impl_8h"/>
+      </node>
+      <node id="73">
+        <label>decode_impl.h</label>
+        <link refid="decode__impl_8h"/>
+      </node>
+      <node id="71">
+        <label>lora.h</label>
+        <link refid="lora_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>encode.h</label>
+        <link refid="encode_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ningning/gr-lora-master-nt/include/lora/lora.h"/>
+  </compounddef>
+</doxygen>

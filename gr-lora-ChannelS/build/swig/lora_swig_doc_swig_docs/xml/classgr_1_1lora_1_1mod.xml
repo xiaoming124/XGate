@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1mod" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::mod</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="mod_8h" local="no">mod.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora_1_1mod" kindref="compound">mod</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;mod&gt; gr::lora::mod::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/mod.h" line="39" column="1" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/mod.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora::mod::make</definition>
+        <argsstring>(short spreading_factor, unsigned char d_sync_word)</argsstring>
+        <name>make</name>
+        <param>
+          <type>short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>d_sync_word</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora_1_1mod" kindref="compound">lora::mod</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora_1_1mod" kindref="compound">lora::mod</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" kindref="member">lora::mod::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/include/lora/mod.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>block</label>
+      </node>
+      <node id="12">
+        <label>gr::lora::mod</label>
+        <link refid="classgr_1_1lora_1_1mod"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>block</label>
+      </node>
+      <node id="14">
+        <label>gr::lora::mod</label>
+        <link refid="classgr_1_1lora_1_1mod"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ningning/gr-lora-master-nt/include/lora/mod.h" line="37" column="1" bodyfile="/home/ningning/gr-lora-master-nt/include/lora/mod.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" prot="public" virt="non-virtual"><scope>gr::lora::mod</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" prot="public" virt="non-virtual"><scope>gr::lora::mod</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

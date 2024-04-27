@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1decode__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::decode_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1decode" prot="public" virt="non-virtual">gr::lora::decode</basecompoundref>
+    <includes refid="decode__impl_8h" local="no">decode_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a87c088f11977fb6f1fa2b58722cde2f3" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::decode_impl::d_in_port</definition>
+        <argsstring></argsstring>
+        <name>d_in_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="34" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1aab770e7184950550b04c35fbc519b5b5" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::decode_impl::d_out_port</definition>
+        <argsstring></argsstring>
+        <name>d_out_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="35" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1ad466e5bea48439f63fc281b2fa58c39b" prot="private" static="no" mutable="no">
+        <type>const unsigned short *</type>
+        <definition>const unsigned short* gr::lora::decode_impl::d_whitening_sequence</definition>
+        <argsstring></argsstring>
+        <name>d_whitening_sequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="37" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1ae9f09cf986e6aabd424173d72ef1230e" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::decode_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="39" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1ac0e84a825d927a56db2dea9b13d7c0cb" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::decode_impl::d_cr</definition>
+        <argsstring></argsstring>
+        <name>d_cr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="40" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a8b5299117fb389e1663553dc37faab35" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::decode_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="41" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a602781088e4706cc8be4c71a67498c1b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::decode_impl::d_header</definition>
+        <argsstring></argsstring>
+        <name>d_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="42" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1ab3b6ff0ff7b33b619635bdd33d57570f" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::decode_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="44" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a8327113891499f27581327e5a0c882a5" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::decode_impl::d_interleaver_size</definition>
+        <argsstring></argsstring>
+        <name>d_interleaver_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="45" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a3ed866a0b8fa6ac253659d33a999f52e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::decode_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="47" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a4ed6cd262b891dd745ebb8777bb54fb5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::lora::decode_impl::d_codewords</definition>
+        <argsstring></argsstring>
+        <name>d_codewords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="48" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decode__impl_1a3ea7486397eeebc3b45bf5fb8720aa98" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::lora::decode_impl::d_bytes</definition>
+        <argsstring></argsstring>
+        <name>d_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="49" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1add64d761d8e00a1029d4965c6058a081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::decode_impl::decode_impl</definition>
+        <argsstring>(short spreading_factor, short code_rate, bool low_data_rate, bool header)</argsstring>
+        <name>decode_impl</name>
+        <param>
+          <type>short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>code_rate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a6956ec546d4e1b1b0087c44f5ff9a8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::decode_impl::~decode_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~decode_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a246b4ff9b389895474ae85cf3efdc1ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::to_gray</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>to_gray</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a4b98fd84da9efa0eb10ed197496e52e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::from_gray</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>from_gray</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a1937aa08919ca43677b9b83143d7de26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::whiten</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>whiten</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a7316668987dafb563cde127230da9aaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::deinterleave</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols, std::vector&lt; unsigned char &gt; &amp;codewords, unsigned char ppm, unsigned char rdd)</argsstring>
+        <name>deinterleave</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>codewords</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ppm</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>rdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1ac0511bef00854bbe18db57638e760660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::hamming_decode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;codewords, std::vector&lt; unsigned char &gt; &amp;bytes, unsigned char rdd)</argsstring>
+        <name>hamming_decode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>codewords</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>rdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a228be080ac2df82d42c349aac6cb3130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::decode_impl::parity</definition>
+        <argsstring>(unsigned char c, unsigned char bitmask)</argsstring>
+        <name>parity</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>bitmask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a0efad78cd2b4dfff27b50a63b2cdbcf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::print_payload</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;payload)</argsstring>
+        <name>print_payload</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1ada90ec5dddedcaea34b08983d544acbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::print_bitwise_u8</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;buffer)</argsstring>
+        <name>print_bitwise_u8</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1a60258aece57e507b76e33876d8a856d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::print_bitwise_u16</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;buffer)</argsstring>
+        <name>print_bitwise_u16</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decode__impl_1aadc1569da436e746b11a1a96b67b00e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decode_impl::decode</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>gr::lora::decode</label>
+        <link refid="classgr_1_1lora_1_1decode"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gr::lora::decode_impl</label>
+        <link refid="classgr_1_1lora_1_1decode__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::lora::decode</label>
+        <link refid="classgr_1_1lora_1_1decode"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gr::lora::decode_impl</label>
+        <link refid="classgr_1_1lora_1_1decode__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" line="32" column="1" bodyfile="/home/ningning/gr-lora-master-nt/lib/decode_impl.h" bodystart="31" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a3ea7486397eeebc3b45bf5fb8720aa98" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_bytes</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a4ed6cd262b891dd745ebb8777bb54fb5" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_codewords</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ac0e84a825d927a56db2dea9b13d7c0cb" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_cr</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ab3b6ff0ff7b33b619635bdd33d57570f" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a602781088e4706cc8be4c71a67498c1b" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_header</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a87c088f11977fb6f1fa2b58722cde2f3" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_in_port</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a8327113891499f27581327e5a0c882a5" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_interleaver_size</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a8b5299117fb389e1663553dc37faab35" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1aab770e7184950550b04c35fbc519b5b5" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_out_port</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ae9f09cf986e6aabd424173d72ef1230e" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a3ed866a0b8fa6ac253659d33a999f52e" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ad466e5bea48439f63fc281b2fa58c39b" prot="private" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>d_whitening_sequence</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1aadc1569da436e746b11a1a96b67b00e8" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>decode</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1add64d761d8e00a1029d4965c6058a081" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>decode_impl</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a7316668987dafb563cde127230da9aaf" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>deinterleave</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a4b98fd84da9efa0eb10ed197496e52e6" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>from_gray</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ac0511bef00854bbe18db57638e760660" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>hamming_decode</name></member>
+      <member refid="classgr_1_1lora_1_1decode_1af43d9a58c2c88024cc8a311a2580a814" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a228be080ac2df82d42c349aac6cb3130" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>parity</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a60258aece57e507b76e33876d8a856d5" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>print_bitwise_u16</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1ada90ec5dddedcaea34b08983d544acbf" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>print_bitwise_u8</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a0efad78cd2b4dfff27b50a63b2cdbcf4" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>print_payload</name></member>
+      <member refid="classgr_1_1lora_1_1decode_1a9fed34843fc239461d942fa71e578978" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a246b4ff9b389895474ae85cf3efdc1ec" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>to_gray</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a1937aa08919ca43677b9b83143d7de26" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>whiten</name></member>
+      <member refid="classgr_1_1lora_1_1decode__impl_1a6956ec546d4e1b1b0087c44f5ff9a8f5" prot="public" virt="non-virtual"><scope>gr::lora::decode_impl</scope><name>~decode_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<block>
+  <name>LoRa Demodulator</name>
+  <key>lora_demod</key>
+  <category>lora</category>
+  <import>import lora</import>
+  <make>lora.demod($spreading_factor, $low_data_rate, $beta, $fft_factor)</make>
+
+  <param>
+    <name>Spreading Factor</name>
+    <key>spreading_factor</key>
+    <value>8</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Low Data Rate</name>
+    <key>low_data_rate</key>
+    <value>False</value>
+    <type>bool</type>
+  </param>
+  <param>
+    <name>FFT Window Beta</name>
+    <key>beta</key>
+    <value>25.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>FFT Size Factor</name>
+    <key>fft_factor</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

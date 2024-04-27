@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1lora_1_1decode" kind="class"><name>gr::lora::decode</name>
+    <member refid="classgr_1_1lora_1_1decode_1a9fed34843fc239461d942fa71e578978" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1decode_1af43d9a58c2c88024cc8a311a2580a814" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1demod" kind="class"><name>gr::lora::demod</name>
+    <member refid="classgr_1_1lora_1_1demod_1aaf5f7e94353c27096fb0c41057382bef" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1demod_1a99d3d47a98790befc1dcddd8b267d9a2" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1encode" kind="class"><name>gr::lora::encode</name>
+    <member refid="classgr_1_1lora_1_1encode_1a5f59fb7c44fd9820a352aa3c93f61345" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1encode_1ae9e1f41e76bbb14adb1e34251248048c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1mod" kind="class"><name>gr::lora::mod</name>
+    <member refid="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1lora" kind="namespace"><name>gr::lora</name>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" kind="enum"><name>demod_state_t</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea366cbf425d183fbb418cb909d7448a95" kind="enumvalue"><name>S_RESET</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eaba2112816a1376592673e9033b90b094" kind="enumvalue"><name>S_PREFILL</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea3bcc60176740437e98e062d37138dd5c" kind="enumvalue"><name>S_DETECT_PREAMBLE</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea31de68db79ba3bbbc2a9cb42de3df515" kind="enumvalue"><name>S_SFD_SYNC</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eacefc68567d14802377cbba9af94b655e" kind="enumvalue"><name>S_READ_HEADER</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea2f55523d883d49715f54cce287d7fe0b" kind="enumvalue"><name>S_READ_PAYLOAD</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea136e67aab0e4810295f19b98cb1b5d25" kind="enumvalue"><name>S_OUT</name></member>
+    <member refid="namespacegr_1_1lora_1a59220c535d34e043573a99c8ea11f893" kind="variable"><name>whitening_sequence_length</name></member>
+    <member refid="namespacegr_1_1lora_1aa174905b7261a69b38e7c60d3a490ce7" kind="variable"><name>whitening_sequence_sf6_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1ae0455725bd2601c68a48b0a03747607d" kind="variable"><name>whitening_sequence_sf7_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1a37fb7ab94db9645ab9fd86342db01001" kind="variable"><name>whitening_sequence_sf8_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1ad521eea600e1f60b371fa37247cfc8ad" kind="variable"><name>whitening_sequence_sf9_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1a52e977da9bce5ef74873cc7439dfd1c2" kind="variable"><name>whitening_sequence_sf10_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1a47753af59982aaf6ec1545235cbeeefa" kind="variable"><name>whitening_sequence_sf11_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1aa7a4cf17816719dee1007bd1c9281d3f" kind="variable"><name>whitening_sequence_sf12_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1abc3d2762f8105e3138d76aeb31840bc7" kind="variable"><name>whitening_sequence_sf6_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1ad9781b5b594d5652450d6747c2a8b34b" kind="variable"><name>whitening_sequence_sf7_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1a4b96006564a2a5ef493b9045530eed41" kind="variable"><name>whitening_sequence_sf8_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1aa8d8193873b3d5393f773e7d4bc52490" kind="variable"><name>whitening_sequence_sf9_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1ad2a8da8ed1f9522ffffef01639de21b1" kind="variable"><name>whitening_sequence_sf10_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1a3cb70e58bfd8d4da9a0acf34c2b9d2af" kind="variable"><name>whitening_sequence_sf11_ldr_implicit</name></member>
+    <member refid="namespacegr_1_1lora_1ab5951b7a2fe7e711c8abbdcdc6a71f24" kind="variable"><name>whitening_sequence_sf12_ldr_implicit</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1afdc461b2e58d75adc8fe72bef899df32" kind="define"><name>LORA_API</name></member>
+  </compound>
+  <compound refid="decode_8h" kind="file"><name>decode.h</name>
+    <member refid="decode_8h_1ac566a60d8bb0a9e4e1e50b520be9ac4b" kind="define"><name>SYMBOL_TIMEOUT_COUNT</name></member>
+  </compound>
+  <compound refid="demod_8h" kind="file"><name>demod.h</name>
+    <member refid="demod_8h_1a26603a2300711064010b4930d21feecb" kind="define"><name>DEMOD_HISTORY_DEPTH</name></member>
+    <member refid="demod_8h_1aec63cfd1559e0075e35fae2f1a81b1fc" kind="define"><name>REQUIRED_PREAMBLE_CHIRPS</name></member>
+    <member refid="demod_8h_1af4808b2f42dd1e6656798151f4f9a4c7" kind="define"><name>REQUIRED_SFD_CHIRPS</name></member>
+    <member refid="demod_8h_1a2f0f156e1cba585db801dc65f46fa8d1" kind="define"><name>LORA_SFD_TOLERANCE</name></member>
+    <member refid="demod_8h_1a1fd26d306ddc14fd13364a5122543ce0" kind="define"><name>LORA_PREAMBLE_TOLERANCE</name></member>
+    <member refid="demod_8h_1a4f76ca6c23ad07d5bf79fd08db4527b1" kind="define"><name>DEMOD_SYNC_RECOVERY_COUNT</name></member>
+  </compound>
+  <compound refid="encode_8h" kind="file"><name>encode.h</name>
+  </compound>
+  <compound refid="lora_8h" kind="file"><name>lora.h</name>
+  </compound>
+  <compound refid="mod_8h" kind="file"><name>mod.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/ningning/gr-lora-master-nt/include</name>
+  </compound>
+  <compound refid="dir_7a7217d5b8ec1be4285377747bc029ba" kind="dir"><name>/home/ningning/gr-lora-master-nt/include/lora</name>
+  </compound>
+</doxygenindex>

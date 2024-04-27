@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="demod__impl_8h" kind="file" language="C++">
+    <compoundname>demod_impl.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">gnuradio/fft/fft.h</includes>
+    <includes local="no">gnuradio/fft/window.h</includes>
+    <includes local="no">volk/volk.h</includes>
+    <includes refid="demod_8h" local="yes">lora/demod.h</includes>
+    <incdepgraph>
+      <node id="38">
+        <label>queue</label>
+      </node>
+      <node id="43">
+        <label>volk/volk.h</label>
+      </node>
+      <node id="35">
+        <label>cmath</label>
+      </node>
+      <node id="44">
+        <label>lora/demod.h</label>
+        <link refid="demod_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="40">
+        <label>fstream</label>
+      </node>
+      <node id="42">
+        <label>gnuradio/fft/window.h</label>
+      </node>
+      <node id="34">
+        <label>demod_impl.h</label>
+        <link refid="demod__impl_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gnuradio/fft/fft.h</label>
+      </node>
+      <node id="37">
+        <label>vector</label>
+      </node>
+      <node id="47">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="45">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>cstdlib</label>
+      </node>
+      <node id="39">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1demod__impl" prot="public">gr::lora::demod_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ningning/gr-lora-master-nt/lib/demod_impl.h"/>
+  </compounddef>
+</doxygen>
