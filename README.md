@@ -68,7 +68,7 @@ booktitle = {Proceedings of the 30th Annual International Conference on Mobile C
 pages = {482–496},
 numpages = {15},
 keywords = {internet of things, LPWAN, LoRa, logical channel},
-location = {<conf-loc>, <city>Washington D.C.</city>, <state>DC</state>, <country>USA</country>, </conf-loc>},
+location = {Washington D.C., DC, USA},
 series = {ACM MobiCom '24}
 }
 ```
