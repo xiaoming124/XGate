@@ -56,13 +56,19 @@ Pre-process and synthesize the data traces:
 
 ```
 @inproceedings{yu2024xgate,
-  title={Revolutionizing LoRa Gateway with XGate: Scalable Concurrent Transmission across Massive Logical Channels},
-  author={Yu, Shiming and Xia, Xianjin and Hou, Ningning and Zheng, Yuanqing and Gu, Tao},
-  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking},
-  year = {2024},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  location = {Washington, D.C., USA},
-  series = {ACM MobiCom '24}
+author = {Yu, Shiming and Xia, Xianjin and Hou, Ningning and Zheng, Yuanqing and Gu, Tao},
+title = {Revolutionizing LoRa Gateway with XGate: Scalable Concurrent Transmission across Massive Logical Channels},
+year = {2024},
+isbn = {9798400704895},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3636534.3649375},
+doi = {10.1145/3636534.3649375},
+booktitle = {Proceedings of the 30th Annual International Conference on Mobile Computing and Networking},
+pages = {482–496},
+numpages = {15},
+keywords = {internet of things, LPWAN, LoRa, logical channel},
+location = {<conf-loc>, <city>Washington D.C.</city>, <state>DC</state>, <country>USA</country>, </conf-loc>},
+series = {ACM MobiCom '24}
 }
 ```
